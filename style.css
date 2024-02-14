@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+  }
+
+p{
+    color: rgb(85, 85, 85);
+}
+
+.icon{
+    height: 2rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Transition */
+a,
+.btn{
+    transition: all 300ms ease;
+}
+
+/* Nav bar */
+nav,
+.nav-links
+{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-links{
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+/* Hamburger Menu */
+#hamburger-nav {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links li {
+    list-style: none;
+  }
+  
+  .menu-links.open {
+    max-height: 300px;
+  }
+  
+  .hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+  }
+  
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+  }
+  
+  .hamburger-icon span:first-child {
+    transform: none;
+  }
+  
+  .hamburger-icon span:first-child {
+    opacity: 1;
+  }
+  
+  .hamburger-icon span:first-child {
+    transform: none;
+  }
+
+
+
+/* Section */
+section{
+    padding-top: 4vh;
+    margin: 0 10rem;
+
+    box-sizing: border-box;
+    min-width: fit-content;
+}
+
+/* Profile section */
+
+#introduction{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 60vh;
+}
+
+.profile-pic{
+    display: flex;
+    margin: auto 0;
+}
+
+.picture{
+    border-radius: 80%;
+    width: 260px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.intro-text{
+    align-self: center;
+    text-align: center;
+}
+
+.intro-text p{
+    font-weight: 600;
+}
+
+.intro-text-p2{
+    font-size: 1.5rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.btn{
+    font-weight: 600;
+    padding: 1rem;
+    width:  8rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+}
+
+.btn-color-1,
+.btn-color-2{
+    border: white 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover{
+    cursor: pointer;
+}
+
+.btn-color-1{
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+/* About Me */
+#about-me{
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.pass-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Project */
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.project-detail{
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.pic-container{
+    display: flex;
+    justify-content: center;
+}
+
+.project-img {
+    border-radius: 0.5rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title{
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+  }
+  
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+  
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+  
+.contact-info-container p {
+    font-size: larger;
+}
+  
+.contact-icon {
+    cursor: default;
+}
+  
+.email-icon {
+    height: 2.5rem;
+}
+  
+
+
+
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer p{
+    text-align: center;
+}
+

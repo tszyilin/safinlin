@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safin Lin</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaquerry.css"/>
+</head>
+<body>
+    <nav id="nav">
+        <div class="logo">Safin Lin</div>
+        <ul class="nav-links">
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Safin Lin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="introduction">
+        <div class="profile-pic">
+            <img src="./assets/pic.JPG" class="picture">
+        </div>
+
+        <div class="intro-text">
+            <p class="intro-text-p1">Hello, I'm</p>
+            <h1 class="title">Safin Lin</h1>
+            <p class="intro-text-p2">Water Enigneer</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-1"
+                    onclick="window.open('./assets/Resume_Tsz-Yi Lin.pdf')"
+                >
+                    Resume<!-- Resume -->
+                </button>
+
+                <button
+                    class="btn btn-color-2"
+                    onclick="window.open('https://www.linkedin.com/in/tsz-yi-lin-966931188/');"
+                >
+                    LinkedIn<!-- LinkedIn -->
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me">
+        <h1 class="title">About Me</h1>
+        <div class="about-container">
+            <div class="pass-container">
+                <div class="pass-card">
+                    <img
+                        src="./assets/experience.png"
+                        class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>Surface Water Engineer</p>
+                    <p>Dam Hydraulic Engineer </p>
+                    <p>Environmental Research Assistant</p>
+                </div>
+                <div class="pass-card">
+                    <img
+                        src="./assets/education.png"
+                        class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>Master of Enigneer</p>
+                    <p>Master of Science</p>
+                    <p>Bachelor of Engineering Science
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <h1 class="title">Projects</h1>
+        <div class="project-container">
+            <div class="profile-detail">
+                <div class="pic-container">
+                    <img
+                    src="./Thumbnail/Project-1.png"
+                    class="project-img"
+                    />
+                </div>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-1"
+                        onclick="window.open('https://jeweled-yard-1d8.notion.site/Excel-data-transformation-c80dc13890344e17bfbc306c30540162')"
+                    >
+                        Read
+                    </button>
+                    <button
+                        class="btn btn-color-2"
+                        onclick="window.open('https://github.com/tszyilin/Excel_Data_Transformation')"
+                    >
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="profile-detail">
+                <div class="pic-container">
+                    <img
+                    src="./Thumbnail/Project-2.png"
+                    class="project-img"
+                    />
+                </div>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-1"
+                        onclick="window.open('https://jeweled-yard-1d8.notion.site/Calculator-587fd2ff81fe4f9bbd4cefc1254b4e9a')"
+                    >
+                        Read
+                    </button>
+                    <button
+                        class="btn btn-color-2"
+                        onclick="window.open('https://github.com/tszyilin/calculator_js')"
+                    >
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:tszyilin@gmail.com">tszyilin@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/tsz-yi-lin-966931188/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+    <footer>
+        <p>Copyright &#169; 2024 Safin Lin. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
